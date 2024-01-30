@@ -123,8 +123,3 @@ if __name__ == '__main__':
         else:
             print("chatting---")
             chat(text)
-
-        #say(text)
-        #sk: " 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 "
-        #weather API, news API
-
