@@ -12,7 +12,7 @@ chatStr = ""
 def chat(text):
     global chatStr
     openai.api_key = apikey
-    chatStr += f"Riyaa: {text}\n AI:"
+    chatStr += f"usera: {text}\n AI:"
 
     messages = [
         {"role": "system", "content": "using artificial intelligence"},
@@ -89,11 +89,11 @@ def input_to_speech():
             print(f"user said : {query}")
             return query
         except Exception as e:
-            return "sorry Riya some error occured"
+            return "sorry some error occured"
 
 if __name__ == '__main__':
     print('PyCharm')
-    say("hello riyyaa welcome")
+    say("hello welcome")
 
     while True:
         print("listening---")
@@ -104,7 +104,7 @@ if __name__ == '__main__':
                 say(f"yes openning{site[0]}.....")
                 webbrowser.open(site[1])
         if "open music" in text:
-                musicPath = r"C:\Users\Riya Singh\Downloads\town-10169.mp3"
+                musicPath = r"C:\Users\user Singh\Downloads\town-10169.mp3"
                 os.startfile(musicPath)
         elif "the time" in text:
             strfTime = datetime.datetime.now().strftime("%H:%M:%S")
@@ -115,7 +115,7 @@ if __name__ == '__main__':
         elif "using artificial intelligence".lower() in text.lower():
             myai(prompt=text)
         elif "exit".lower() in text.lower():
-            say("bye bye Riyaa see you soon...")
+            say("bye bye usera see you soon...")
             exit()
         elif "reset chat".lower() in text.lower():
             chatStr = ""
