@@ -104,7 +104,7 @@ if __name__ == '__main__':
                 say(f"yes openning{site[0]}.....")
                 webbrowser.open(site[1])
         if "open music" in text:
-                musicPath = r"C:\Users\user Singh\Downloads\town-10169.mp3"
+                musicPath = r"C:\Users\file.mp3"
                 os.startfile(musicPath)
         elif "the time" in text:
             strfTime = datetime.datetime.now().strftime("%H:%M:%S")
@@ -115,7 +115,7 @@ if __name__ == '__main__':
         elif "using artificial intelligence".lower() in text.lower():
             myai(prompt=text)
         elif "exit".lower() in text.lower():
-            say("bye bye usera see you soon...")
+            say("bye bye user see you soon...")
             exit()
         elif "reset chat".lower() in text.lower():
             chatStr = ""
